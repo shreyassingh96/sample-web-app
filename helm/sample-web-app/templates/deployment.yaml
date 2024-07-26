@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: sample-web-app
-        image: shreyassingh96/sample-web-app
+        image: shreyassingh96/sample-web-app:{{ .Values.image.tag}}
         ports:
         - containerPort: 8080
